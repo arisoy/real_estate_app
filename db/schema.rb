@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161011194601) do
+ActiveRecord::Schema.define(version: 20161012161940) do
 
   create_table "adverts", force: :cascade do |t|
     t.float    "price"
@@ -24,6 +24,19 @@ ActiveRecord::Schema.define(version: 20161011194601) do
     t.integer  "parent_toilet_count"
     t.integer  "toilet_count"
     t.integer  "advert_real_estate_type"
+    t.integer  "M2"
+    t.integer  "bina_yasi"
+    t.integer  "bulundugu_kat"
+    t.integer  "kat_sayisi"
+    t.integer  "isinma_tipi"
+    t.integer  "banyo_sayisi"
+    t.integer  "esya_durumu"
+    t.integer  "kullanim_durumu"
+    t.integer  "site_icerisinde"
+    t.integer  "aidat"
+    t.integer  "krediye_uygun"
+    t.integer  "kimden"
+    t.integer  "takas"
     t.index ["agent_id"], name: "index_adverts_on_agent_id"
     t.index ["room_option_id"], name: "index_adverts_on_room_option_id"
   end
