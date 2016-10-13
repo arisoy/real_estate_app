@@ -46,6 +46,6 @@ class AdvertsController < ApplicationController
 
     # Only allow a trusted parameter "white list" through.
     def advert_params
-      params.require(:advert).permit(:price, :adress, :agent_id, :toilet_count)
+      params.require(:advert).permit(:price, :adress, :agent_id, :toilet_count, :salon_count)
     end
 end
